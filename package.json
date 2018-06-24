@@ -1,0 +1,45 @@
+{
+  "name": "soumyaparker.com",
+  "description": "Soumya Parker website",
+  "version": "0.0.1",
+  "author": "Raghuvir Kasturi <raghuvir.kasturi@gmail.com> (http://raghuvirkasturi.com)",
+  "dependencies": {
+    "aws-cf-invalidate": "^1.0.1",
+    "gatsby": "next",
+    "gatsby-plugin-react-helmet": "next",
+    "gatsby-plugin-styled-components": "^2.0.11",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-helmet": "^5.2.0",
+    "s3-deploy": "^1.0.1",
+    "styled-components": "^3.3.3"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write 'src/**/*.js'",
+    "deploy": "gatsby build --prefix-paths && s3-deploy './public/**' --cwd './public/' --bucket soumyaparker.com --deleteRemoved --gzip --distId E3CSX94X6OPC7D"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^5.0.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-flowtype": "^2.46.1",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "normalize.css": "^8.0.0",
+    "postcss-preset-env": "^5.1.0",
+    "prettier": "^1.11.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  }
+}
