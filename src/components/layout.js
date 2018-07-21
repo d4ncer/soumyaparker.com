@@ -4,17 +4,12 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
-import Header from './header';
 import './layout.css';
 
-const sansFont = 'Raleway, sans-serif';
+/* const sansFont = 'Raleway, sans-serif'; */
 const serifFont = 'Playfair Display, serif';
 
 const Wrapper = styled.div`
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 0px 1.0875rem 1.45rem;
-  padding-top: 0;
   font-family: ${serifFont};
 `;
 
@@ -34,8 +29,12 @@ const Layout = ({ children, data }) => (
         <Helmet
           title={d.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            {
+              name: 'description',
+              content:
+                'Soumya Parker is a visual & aspiring UI/UX designer based out of Auckland, New Zealand.',
+            },
+            { name: 'keywords', content: 'designer,graphic,ui,ux' },
           ]}
         >
           <link
@@ -43,7 +42,6 @@ const Layout = ({ children, data }) => (
             rel="stylesheet"
           />
         </Helmet>
-        <Header siteTitle={d.site.siteMetadata.title} />
         <Wrapper>{children}</Wrapper>
       </>
     )}
