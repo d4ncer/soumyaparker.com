@@ -20,7 +20,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "start": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "deploy": "gatsby build --prefix-paths && s3-deploy './public/**' --cwd './public/' --bucket soumyaparker.com --deleteRemoved --gzip --distId E3CSX94X6OPC7D"
   },
