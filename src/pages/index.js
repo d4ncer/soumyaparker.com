@@ -18,20 +18,22 @@ const IntroContainer = styled.div`
     top: -5rem;
   }
 
-  @media (min-width: ${styles.sizes.sm}) {
-    top: -7rem;
+  @media (min-width: ${styles.sizes.md}) {
+    position: absolute;
+    top: unset;
+    margin: 0 5rem;
+    padding: 0;
+    bottom: 10rem;
+    width: 30vw;
   }
 
   @media (min-width: ${styles.sizes.lg}) {
-    position: absolute;
-    margin: 0 5rem;
-    padding: 0;
-    top: 22rem;
+    bottom: 15rem;
     width: 40vw;
   }
 
   @media (min-width: ${styles.sizes.xlg}) {
-    top: 27rem;
+    bottom: 10rem;
     width: 35vw;
   }
 `;
@@ -55,16 +57,20 @@ const Intro = styled.p`
   }
 `;
 
+const HeroContainer = styled.div`
+  position: relative;
+`;
+
 const IndexPage = ({ data }) => (
   <Layout>
-    <>
+    <HeroContainer>
       <BgImage fluid={data.headerImage.childImageSharp.fluid} />
       <IntroContainer>
         <Intro>
           Hi, my name is Soumya and I am a designer & an illustrator
         </Intro>
       </IntroContainer>
-    </>
+    </HeroContainer>
   </Layout>
 );
 
