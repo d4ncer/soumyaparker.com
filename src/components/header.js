@@ -5,22 +5,26 @@ import styled from 'styled-components';
 import styles from '../utils/styles';
 
 const HeaderContainer = styled.div`
-  width: 90rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 6vh auto;
-  padding: 0;
+  width: 100%;
+  margin: 3vh auto;
+  padding: 0 2rem;
 
-  @media (max-width: 1600px) {
-    width: 64rem;
-    margin: 5vh auto;
+  @media (min-width: ${styles.sizes.lg}) {
+    width: 62rem;
+    margin: 4vh auto;
+    padding: 0;
   }
 
-  @media (max-width: 1088px) {
-    width: 100%;
-    margin: 3vh auto;
-    padding: 0 2rem;
+  @media (min-width: ${styles.sizes.xlg}) {
+    width: 90rem;
+    margin: 6vh auto;
   }
 `;
 
@@ -29,23 +33,23 @@ const SiteTitle = styled.h1`
   font-family: ${styles.font.serif};
   font-weight: normal;
   margin: 0;
+  font-size: 0.8rem;
   letter-spacing: 0.03rem;
-  font-size: 1.875rem;
 
-  @media (max-width: 1600px) {
-    font-size: 1.4375rem;
+  @media (min-width: ${styles.sizes.sm}) {
+    font-size: 0.8rem;
   }
 
-  @media (max-width: 1024px) {
-    font-size: 1.25rem;
-  }
-
-  @media (max-width: 768px) {
+  @media (min-width: ${styles.sizes.md}) {
     font-size: 1rem;
   }
 
-  @media (max-width: 480px) {
-    font-size: 0.8rem;
+  @media (min-width: ${styles.sizes.lg}) {
+    font-size: 1.25rem;
+  }
+
+  @media (min-width: ${styles.sizes.xlg}) {
+    font-size: 1.875rem;
   }
 `;
 
@@ -63,19 +67,23 @@ const SiteLinkItem = styled.li`
   text-transform: uppercase;
   margin-left: 2.4375rem;
   letter-spacing: 0.05rem;
-  font-size: 1.4375rem;
+  font-size: 0.8rem;
   font-weight: normal;
 
-  @media (max-width: 1600px) {
-    font-size: 1.25rem;
+  @media (min-width: ${styles.sizes.sm}) {
+    font-size: 0.8rem;
   }
 
-  @media (max-width: 1024px) {
+  @media (min-width: ${styles.sizes.md}) {
     font-size: 1rem;
   }
 
-  @media (max-width: 480px) {
-    font-size: 0.8rem;
+  @media (min-width: ${styles.sizes.lg}) {
+    font-size: 1.25rem;
+  }
+
+  @media (min-width: ${styles.sizes.xlg}) {
+    font-size: 1.475rem;
   }
 `;
 

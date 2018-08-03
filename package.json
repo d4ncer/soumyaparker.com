@@ -6,13 +6,17 @@
   "dependencies": {
     "aws-cf-invalidate": "^1.0.1",
     "gatsby": "next",
+    "gatsby-image": "^2.0.0-beta.7",
     "gatsby-plugin-react-helmet": "next",
+    "gatsby-plugin-sharp": "^2.0.0-beta.7",
     "gatsby-plugin-styled-components": "^2.0.11",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "gatsby-source-filesystem": "^2.0.1-beta.10",
+    "gatsby-transformer-sharp": "^2.1.1-beta.6",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
     "react-helmet": "^5.2.0",
-    "s3-deploy": "^1.0.1",
-    "styled-components": "^3.3.3"
+    "s3-deploy": "^1.1.1",
+    "styled-components": "^3.4.0"
   },
   "keywords": [
     "gatsby"
@@ -25,18 +29,18 @@
     "deploy": "gatsby build --prefix-paths && s3-deploy './public/**' --cwd './public/' --bucket soumyaparker.com --deleteRemoved --gzip --distId E3CSX94X6OPC7D"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.2",
+    "babel-eslint": "^8.2.6",
     "babel-preset-flow": "^6.23.0",
-    "eslint": "^5.0.0",
+    "eslint": "^5.2.0",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-flowtype": "^2.46.1",
-    "eslint-plugin-import": "^2.9.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.10.0",
     "normalize.css": "^8.0.0",
-    "postcss-preset-env": "^5.1.0",
-    "prettier": "^1.11.1"
+    "postcss-preset-env": "^5.3.0",
+    "prettier": "^1.14.0"
   },
   "repository": {
     "type": "git",

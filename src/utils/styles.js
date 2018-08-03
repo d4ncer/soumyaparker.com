@@ -8,4 +8,10 @@ export default {
     secondary: '#5C5D60',
     test: '#90847D',
   },
+  sizes: {
+    sm: '40rem',
+    md: '48rem',
+    lg: '64rem',
+    xlg: '100rem',
+  },
 };
