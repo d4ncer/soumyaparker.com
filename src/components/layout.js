@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
+import Footer from './footer';
 import './layout.css';
 
 /* const sansFont = 'Raleway, sans-serif'; */
@@ -21,6 +22,34 @@ const Layout = ({ children, data }) => (
         site {
           siteMetadata {
             title
+          }
+        }
+        footerImage: file(relativePath: { eq: "footer.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 2400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        linkedInImage: file(relativePath: { eq: "linkedin.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 2400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        behanceImage: file(relativePath: { eq: "behance.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 2400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        instagramImage: file(relativePath: { eq: "instagram.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 2400) {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }
@@ -45,6 +74,12 @@ const Layout = ({ children, data }) => (
         </Helmet>
         <Header />
         <Wrapper>{children}</Wrapper>
+        <Footer
+          instagramImg={d.instagramImage.childImageSharp.fluid}
+          linkedInImg={d.linkedInImage.childImageSharp.fluid}
+          behanceImg={d.behanceImage.childImageSharp.fluid}
+          backgroundImg={d.footerImage.childImageSharp.fluid}
+        />
       </>
     )}
   />

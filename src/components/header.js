@@ -15,6 +15,7 @@ const HeaderContainer = styled.div`
   width: 100%;
   margin: 3vh auto;
   padding: 0 2rem;
+  z-index: 99;
 
   @media (min-width: ${styles.sizes.lg}) {
     width: 62rem;
@@ -29,7 +30,7 @@ const HeaderContainer = styled.div`
 `;
 
 const SiteTitle = styled.h1`
-  color: ${styles.color.test};
+  color: ${styles.color.grey};
   font-family: ${styles.font.serif};
   font-weight: normal;
   margin: 0;
@@ -63,7 +64,7 @@ const SiteLinks = styled.ul`
 
 const SiteLinkItem = styled.li`
   font-family: ${styles.font.sans};
-  color: ${styles.color.test};
+  color: ${styles.color.grey};
   text-transform: uppercase;
   margin-left: 2.4375rem;
   letter-spacing: 0.05rem;
@@ -89,8 +90,12 @@ const SiteLinkItem = styled.li`
 
 const SiteLink = styled(Link)`
   text-decoration: none;
-  color: ${styles.color.test};
+  color: ${styles.color.grey};
   cursor: pointer;
+
+  &:hover {
+    color: ${styles.color.interact};
+  }
 `;
 
 const activeLinkStyles = {

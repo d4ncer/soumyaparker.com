@@ -6,7 +6,8 @@ export default {
   color: {
     primary: '#F16C68',
     secondary: '#5C5D60',
-    test: '#90847D',
+    grey: '#90847D',
+    interact: '#333',
   },
   sizes: {
     sm: '40rem',

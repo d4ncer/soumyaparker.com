@@ -53,7 +53,7 @@ export const H3 = styled.h3`
 `;
 
 export const AltH3 = styled(H3)`
-  color: ${styles.color.test};
+  color: ${styles.color.grey};
 `;
 
 export const P = styled.p`
@@ -62,7 +62,7 @@ export const P = styled.p`
   line-height: 1.75;
   padding: 0;
   margin: 0;
-  color: ${styles.color.test};
+  color: ${styles.color.grey};
 
   @media (min-width: ${styles.sizes.lg}) {
     font-size: 1rem;

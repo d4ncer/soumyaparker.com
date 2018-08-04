@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import styled from 'styled-components';
 
 import styles from '../utils/styles';
@@ -143,7 +143,7 @@ const CTA = styled(AltH3)`
   transition: color 0.15s ease-in-out;
 
   &:hover {
-    color: #333;
+    color: ${styles.color.interact};
   }
 
   > a {
@@ -213,7 +213,7 @@ const IndexPage = ({ data }) => (
 );
 
 export const query = graphql`
-  query HeaderImgQuery {
+  query ImagesQuery {
     headerImage: file(relativePath: { eq: "header.png" }) {
       childImageSharp {
         fluid(quality: 100, maxWidth: 2400) {
