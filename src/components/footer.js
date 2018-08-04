@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import Image from 'gatsby-image';
 import styled from 'styled-components';
 
@@ -38,18 +39,28 @@ const SocialMediaImg = styled.div`
   }
 `;
 
+const A = styled.a`
+  z-index: 99;
+`;
+
 const Footer = ({ backgroundImg, linkedInImg, behanceImg, instagramImg }) => (
   <FooterContainer>
     <BgImage fluid={backgroundImg} />
     <SocialMediaContainer>
       <SocialMediaImg>
-        <Image fluid={linkedInImg} />
+        <A href="https://www.linkedin.com/in/soumya-parker-94934098/">
+          <Image fluid={linkedInImg} />
+        </A>
       </SocialMediaImg>
       <SocialMediaImg>
-        <Image fluid={behanceImg} />
+        <A href="https://www.behance.net/soumyaparker">
+          <Image fluid={behanceImg} />
+        </A>
       </SocialMediaImg>
       <SocialMediaImg>
-        <Image fluid={instagramImg} />
+        <A href="https://www.instagram.com/soumyaparker/">
+          <Image fluid={instagramImg} />
+        </A>
       </SocialMediaImg>
     </SocialMediaContainer>
   </FooterContainer>
