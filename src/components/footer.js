@@ -12,16 +12,12 @@ const FooterContainer = styled.div`
 
 const SocialMediaContainer = styled.div`
   position: absolute;
-  bottom: 1rem;
+  bottom: 2rem;
   padding: 0 1rem;
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: center;
-
-  @media (min-width: ${styles.sizes.lg}) {
-    justify-content: flex-start;
-  }
 `;
 
 const SocialMediaImg = styled.div`
@@ -36,8 +32,8 @@ const SocialMediaImg = styled.div`
   }
 
   @media (min-width: ${styles.sizes.lg}) {
-    height: 3rem;
-    width: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
     margin-right: 1.333rem;
   }
 `;
