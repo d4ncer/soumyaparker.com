@@ -66,7 +66,7 @@ const HelpItems = styled.div`
   @media (min-width: ${styles.sizes.md}) {
     flex-wrap: unset;
     display: grid;
-    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
       'img1 img2 img3'
@@ -162,37 +162,33 @@ const IndexPage = ({ data }) => (
         </IntroContainer>
       </HeroContainer>
       <HelpContainer>
-        <H2>Here's how I can help</H2>
+        <H2>What I can do for you</H2>
         <HelpItems>
           <HelpImageWrapper gridArea="img1">
             <BgImage fluid={data.graphicImage.childImageSharp.fluid} />
           </HelpImageWrapper>
-          <HelpTitle gridArea="title1">
-            Do you need print/web/digital collaterals?
-          </HelpTitle>
+          <HelpTitle gridArea="title1">Visual Communication</HelpTitle>
           <HelpText gridArea="txt1">
-            It’s fun if you sing it to the tune of Frozen’s “Do you want to
-            build a snowman”. Are you just starting out and are looking to build
-            an identity for your brand? Or perhaps you want to design a better
-            experience for your customers?
+            From books to digital ads, I can help you design & execute a
+            strategy across channels to help you communicate your message
+            clearly and effectively.
           </HelpText>
           <HelpImageWrapper gridArea="img2">
             <BgImage fluid={data.drawImage.childImageSharp.fluid} />
           </HelpImageWrapper>
-          <HelpTitle gridArea="title2">Do you need something drawn?</HelpTitle>
+          <HelpTitle gridArea="title2">Illustration</HelpTitle>
           <HelpText gridArea="txt2">
-            Looking for a way to be able to tell your story better? To help
-            consumers understand the product? or just want to commission a
-            piece.
+            I can help you tell your story better through illustrations crafted
+            to delight & inform. I'm also open to comissioned work.
           </HelpText>
           <HelpImageWrapper gridArea="img3">
             <BgImage fluid={data.brandImage.childImageSharp.fluid} />
           </HelpImageWrapper>
-          <HelpTitle gridArea="title3">Do you want to build a brand?</HelpTitle>
+          <HelpTitle gridArea="title3">Identity & Brand</HelpTitle>
           <HelpText gridArea="txt3">
-            Books? Posters? Brochures? Pamphlets? Menus? Digital ads, digital
-            banners, website graphics? Things that look good, but more
-            importantly work better.
+            Whether it's creating a new identity for a product or tweaking an
+            existing brand for an everchanging global market, I can help distill
+            your core values & practices into a robust & multifacted identity.
           </HelpText>
         </HelpItems>
       </HelpContainer>

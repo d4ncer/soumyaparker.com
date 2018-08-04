@@ -58,8 +58,10 @@ export const AltH3 = styled(H3)`
 
 export const P = styled.p`
   font-family: ${styles.font.sans};
+  font-weight: 300;
   font-size: 0.8125rem;
-  line-height: 1.75;
+  line-height: 1.6;
+  letter-spacing: 0.02rem;
   padding: 0;
   margin: 0;
   color: ${styles.color.grey};

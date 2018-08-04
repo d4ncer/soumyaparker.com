@@ -68,7 +68,7 @@ const Layout = ({ children, data }) => (
           ]}
         >
           <link
-            href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:500,500i"
+            href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:300"
             rel="stylesheet"
           />
         </Helmet>
