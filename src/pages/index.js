@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import styled from 'styled-components';
 
 import styles from '../utils/styles';
@@ -195,7 +196,9 @@ const IndexPage = ({ data }) => (
       <CTAContainer>
         <CTATitle>Say hi!</CTATitle>
         <CTA>
-          <a href="mailto:soumyaparker@gmail.com">soumyaparker@gmail.com</a>
+          <OutboundLink href="mailto:soumyaparker@gmail.com">
+            soumyaparker@gmail.com
+          </OutboundLink>
         </CTA>
         <P style={{ marginBottom: '0.75rem' }}>
           If you have an interesting project in mind, would like to collaborate

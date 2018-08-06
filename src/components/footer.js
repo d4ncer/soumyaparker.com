@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import Image from 'gatsby-image';
 import styled from 'styled-components';
 
@@ -39,7 +39,7 @@ const SocialMediaImg = styled.div`
   }
 `;
 
-const A = styled.a`
+const A = styled(OutboundLink)`
   z-index: 99;
 `;
 
