@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 export const ComingSoon = styled.div`
@@ -7,4 +6,5 @@ export const ComingSoon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 `;
