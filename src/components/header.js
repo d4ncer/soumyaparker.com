@@ -100,7 +100,7 @@ const SiteLink = styled(Link)`
 
 const activeLinkStyles = {
   paddingBottom: '0.75rem',
-  borderBottom: `0.25rem solid ${styles.color.primary}`,
+  color: styles.color.primary,
 };
 
 const Header = () => (
