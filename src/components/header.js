@@ -34,19 +34,19 @@ const SiteTitle = styled.h1`
   font-family: ${styles.font.serif};
   font-weight: normal;
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 1rem;
   letter-spacing: 0.03rem;
 
   @media (min-width: ${styles.sizes.sm}) {
-    font-size: 0.8rem;
-  }
-
-  @media (min-width: ${styles.sizes.md}) {
     font-size: 1rem;
   }
 
-  @media (min-width: ${styles.sizes.lg}) {
+  @media (min-width: ${styles.sizes.md}) {
     font-size: 1.25rem;
+  }
+
+  @media (min-width: ${styles.sizes.lg}) {
+    font-size: 1.5rem;
   }
 
   @media (min-width: ${styles.sizes.xlg}) {
