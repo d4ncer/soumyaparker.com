@@ -54,7 +54,7 @@ const Layout = ({ children, data }) => (
         }
       }
     `}
-    render={d => (
+    render={(d) => (
       <>
         <Helmet
           title={d.site.siteMetadata.title}
