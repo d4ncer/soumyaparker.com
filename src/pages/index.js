@@ -205,7 +205,10 @@ const IndexPage = ({ data }) => (
           on something cool, or are in the neighbourhood and want to chat, get
           in touch!
         </P>
-        <P>I am available for freelance projects and full-time employment.</P>
+        <P>
+          I am currently unavailable for freelance projects or full-time
+          employment.
+        </P>
       </CTAContainer>
     </>
   </Layout>

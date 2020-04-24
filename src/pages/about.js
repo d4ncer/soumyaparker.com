@@ -1,6 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
+import { darken } from 'polished';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import styles from '../utils/styles';
 import Layout from '../components/layout';
@@ -51,6 +53,15 @@ const Text = styled(P)`
   margin-top: 1rem;
 `;
 
+const A = styled(OutboundLink)`
+  text-decoration: none;
+
+  color: ${styles.color.primary};
+  &:hover {
+    color: ${darken(0.2, styles.color.primary)};
+  }
+`;
+
 const AboutPage = ({ data }) => (
   <Layout>
     <>
@@ -59,6 +70,10 @@ const AboutPage = ({ data }) => (
       </ImgContainer>
       <TextContainer>
         <H2>About</H2>
+        <Text>
+          I am currently a Junior Product Designer at{' '}
+          <A href="https://hapara.com/">Hāpara</A>.
+        </Text>
         <Text>
           Over the last seven years I have worked with various different types
           of organisations and individuals to help them better engage and
